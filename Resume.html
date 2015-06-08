@@ -1,5 +1,89 @@
+<!DOCTYPE html>
 <html>
-<body>
-Hello World!
+  <head>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src ="ResumeCSS.css"></script>
+    <script>
+    $(document).ready(function(){
+    function changeText(name) {
+      switch (name) {
+        case '1':
+          MainTitle.innerHTML = "About Me";
+          MainText.innerHTML = "I have lived in many different parts of the wo";
+          break;
+        case '2':
+          MainTitle.innerHTML = "Academic Accomplishments";
+          MainText.innerHTML = "Stuff about school here";
+          break;
+        case '3':
+          MainTitle.innerHTML = "Extracurricular Accomplishments";
+          MainText.innerHTML = "Stuff about other stuff here";
+          break;
+        case '4':
+          MainTitle.innerHTML = "Contact Me";
+          MainText.innerHTML = "How to contact me here";
+          break;
+      }
+    }
+      $("li").click(function(){
+        var liId = $(this).attr('id');
+        $("#Main").fadeOut(function() {
+          changeText(liId);
+          $("#Main").fadeIn();
+        });
+      });
+    });
+    </script>
+
+    <style>
+    ul#menu {
+        padding: 0;
+    }
+
+    ul#menu li {
+        display: inline;
+    }
+
+    ul#menu li a {
+        background-color: black;
+        color: white;
+        padding: 10px 20px;
+        text-decoration: none;
+        border-radius: 4px 4px 0 0;
+    }
+
+    ul#menu li a:hover {
+        background-color: orange;
+    }
+    </style>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+  </head>
+
+  <body>
+    <div class="container">
+    <div class="jumbotron" style="background-color:lightskyblue">
+      <img src="Chris.jpg" alt="Chris Lu" style="float:right; width:182px; height:170px;">
+      <h1>Chris Lu</h1> 
+      <p>Up and Coming Computer Engineer</p> 
+    </div>
+
+  <h2>Welcome to my site!</h2>
+
+    <ul id="menu">
+      <li id="1"><a onmouseover="" style="cursor: pointer;">About Me</a></li>
+      <li id="2"><a onmouseover="" style="cursor: pointer;">Academic Accomplishments</a></li>
+      <li id="3"><a onmouseover="" style="cursor: pointer;">Extracurricular Accomplishments</a></li>
+      <li id="4"><a onmouseover="" style="cursor: pointer;">Contact Me</a></li>
+    </ul>
+
+  <div id="Main" style="background-color:white; color:black; padding:20px;">
+    <h3 id="MainTitle"></h3>
+    <p id="MainText"></p>
+  </div>
+
+  </div>
+
 </body>
 </html>
