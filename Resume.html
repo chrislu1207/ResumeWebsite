@@ -2,14 +2,13 @@
 <html>
   <head>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <script src ="ResumeCSS.css"></script>
     <script>
     $(document).ready(function(){
     function changeText(name) {
       switch (name) {
         case '1':
           MainTitle.innerHTML = "About Me";
-          MainText.innerHTML = "I have lived in many different parts of the wo";
+          MainText.innerHTML = "<p>I have lived in many different parts of the world as I grew up, most notably traveling to Shanghai after 6th grade. Studying in Shanghai allowed me to compare the differences in culture between North America and Asia, and has helped honed my mathematical and logical skills. Constantly moving has also helped me learn to adapt to new environments quickly. I still retained a strong motivation to explore my own interests, and graduating from an international school has helped me learn how to maintain connections with friends and classmates, who went to universities all over the world to achieve a higher education.</p><p>Having played games since I was a child, I have been highly interested in understanding the underlying infrastructure of games throughout my entire life. Enrolling in the University of British Columbia's Computer Engineering program gave me the opportunity I needed to delve deeper into my interests, allowing me to learn languages such as C/C++ and Java and other coding practices such as code testing and agile programming. As a computer engineer, I have been trained to solve challenging problems, and extensive experience working in teams has honed my communication and collaboration skills. I look forward to learning even more skills that can help me be a better engineer, and possibly allow me to help work on bringing enjoyable, high quality games to gamers like me in the future.<p/><p>Games I currently enjoy include League of Legends, CS:GO, World of Warcraft and Hearthstone. Games I previously played and completed include Borderlands 2, Diablo 3, Starcraft 2 and Dark Souls, as well as numerous others. Other interests of mine include sports such as basketball and badminton, as well as creative writing. I am also an avid mobile gamer, enjoying mobile games such as Puzzles and Dragons as well as tower defense games such as Kingdom Rush.</p>";
           break;
         case '2':
           MainTitle.innerHTML = "Academic Accomplishments";
@@ -21,7 +20,7 @@
           break;
         case '4':
           MainTitle.innerHTML = "Contact Me";
-          MainText.innerHTML = "How to contact me here";
+          MainText.innerHTML = "<p><img src=\"Phone.jpg\" alt=\"Phone\" style=\"float:left;width:42px;height:42px;\">+1 (778)999-9177</p><p><img src=\"Facebook.jpg\" alt=\"Facebook\" style=\"float:left;width:42px;height:42px;\">Link to my Facebook</p>";
           break;
       }
     }
@@ -34,53 +33,44 @@
       });
     });
     </script>
-
-    <style>
-    ul#menu {
-        padding: 0;
-    }
-
-    ul#menu li {
-        display: inline;
-    }
-
-    ul#menu li a {
-        background-color: black;
-        color: white;
-        padding: 10px 20px;
-        text-decoration: none;
-        border-radius: 4px 4px 0 0;
-    }
-
-    ul#menu li a:hover {
-        background-color: orange;
-    }
-    </style>
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width, initial-scale=1">
       <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+      <link rel="stylesheet" type="text/css" href="ResumeCSS.css">
   </head>
 
   <body>
-    <div class="container">
-    <div class="jumbotron" style="background-color:lightskyblue">
-      <img src="Chris.jpg" alt="Chris Lu" style="float:right; width:182px; height:170px;">
-      <h1>Chris Lu</h1> 
-      <p>Up and Coming Computer Engineer</p> 
+    <div id="side-tabs">
+      <a class="support" href="https://www.facebook.com/callmenazar">
+        <img src="Facebook.jpg">
+      </a>
     </div>
 
-  <h2>Welcome to my site!</h2>
+    <div id="side-tabz">
+      <a class="support" href="https://github.com/chrislu1207">
+        <img src="Github.jpg">
+      </a>
+    </div>
 
-    <ul id="menu">
-      <li id="1"><a onmouseover="" style="cursor: pointer;">About Me</a></li>
-      <li id="2"><a onmouseover="" style="cursor: pointer;">Academic Accomplishments</a></li>
-      <li id="3"><a onmouseover="" style="cursor: pointer;">Extracurricular Accomplishments</a></li>
-      <li id="4"><a onmouseover="" style="cursor: pointer;">Contact Me</a></li>
-    </ul>
+    <div class="container">
+      <div class="jumbotron" style="background-color:lightskyblue">
+        <div><img src="Chris.jpg" id="circular"></div>
+        <h1>Chris Lu</h1> 
+        <p>Up and Coming Computer Engineer</p> 
+      </div>
 
-  <div id="Main" style="background-color:white; color:black; padding:20px;">
-    <h3 id="MainTitle"></h3>
-    <p id="MainText"></p>
+    <h2>Welcome to my site!</h2>
+
+      <ul id="menu">
+        <li id="1"><a>About Me</a></li>
+        <li id="2"><a>Academic Accomplishments</a></li>
+        <li id="3"><a>Extracurricular Accomplishments</a></li>
+        <li id="4"><a>Contact Me</a></li>
+      </ul>
+
+    <div id="Main">
+      <h3 id="MainTitle"></h3>
+      <p id="MainText"></p>
   </div>
 
   </div>
