@@ -1,6 +1,6 @@
 #circular {
-	width: 250px;
-	height: 250px;
+	width: 220px;
+	height: 220px;
 	border-radius: 150px;
 	-webkit-border-radius: 150px;
 	-moz-border-radius: 150px;
@@ -8,12 +8,12 @@
 	box-shadow: 0 0 8px rgba(0, 0, 0, .8);
 	-webkit-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
 	-moz-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
-	float: right;
+	/*float: right;*/
 	}
 
 #side-tab-fb a.support img {
 	left: 0px;
-	top: 250px;
+	top: 270px;
 	height: 50px;
 	width: 50px;
 	margin: 0;
@@ -21,6 +21,10 @@
 	position: fixed;
 	z-index: 9999;
 	display:block;
+}
+
+body {
+	background-color: #ffcc99;
 }
 
 #side-tab-git a.support img {
@@ -45,6 +49,12 @@
 	position: fixed;
 	z-index: 9999;
 	display:block;
+}
+
+.v-align {
+	float: none;
+    display: inline-block;
+    vertical-align: middle;
 }
 
 ul {

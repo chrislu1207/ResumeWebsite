@@ -20,7 +20,7 @@
           break;
         case '4':
           MainTitle.innerHTML = "Contact Me";
-          MainText.innerHTML = "<p><img src=\"Phone.jpg\" alt=\"Phone\" style=\"float:left;width:42px;height:42px;\">+1 (778)999-9177</p><br><p><img src=\"Email.jpg\" alt=\"Email\" style=\"float:left;width:42px;height:42px;\">krizloo@gmail.com</p>";
+          MainText.innerHTML = "<div><img class=\"v-align\" src=\"Phone.jpg\" alt=\"Phone\" style=\"width:42px;height:42px;\"><span class='v-align'>+1 (778)999-9177</span></div><div><img class='v-align' src=\"Email.jpg\" alt=\"Email\" style=\"width:42px;height:42px;\"><span class='v-align'>krizloo@gmail.com</span></div>";
           break;
       }
     }
@@ -42,7 +42,7 @@
   <body>
     <div id="side-tab-fb">
       <a class="support" href="https://www.facebook.com/callmenazar">
-        <img src="Facebook.jpg">
+        <img src="Facebook2.jpg">
       </a>
     </div>
 
@@ -60,9 +60,15 @@
 
     <div class="container">
       <div class="jumbotron" style="background-color:lightskyblue">
-        <div><img src="Chris.jpg" id="circular"></div>
-        <h1>Chris Lu</h1> 
-        <p>Up and Coming Computer Engineer</p> 
+        <div class="v-align" style="width:64%">
+          <h1>Chris Lu</h1> 
+          <p>Up and Coming Computer Engineer</p>
+          <p><b>Current Status:</b> Website Development Intern at LOGAZINE</p>
+          <p><b>Expected Graduation Date:</b> May 2016</p>
+        </div>
+        <div class="v-align" style="width:35%">
+          <img width="100%" src="Chris.jpg" id="circular" onmouseover="this.src='Chris2.jpg'" onmouseout="this.src='Chris.jpg'">
+        </div>
       </div>
 
     <h2>Welcome to my site!</h2>
