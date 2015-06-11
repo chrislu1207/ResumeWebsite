@@ -11,8 +11,7 @@
 	float: right;
 	}
 
-#side-tabs a.support img {
-/*	background: url("Banana.jpg");*/
+#side-tab-fb a.support img {
 	left: 0px;
 	top: 250px;
 	height: 50px;
@@ -24,8 +23,7 @@
 	display:block;
 }
 
-#side-tabz a.support img {
-/*	background: url("Banana.jpg");*/
+#side-tab-git a.support img {
 	left: 0px;
 	top: 320px;
 	height: 50px;
@@ -37,8 +35,16 @@
 	display:block;
 }
 
-#MainText {
-	text-indent: 50px;
+#side-tab-email a.support img {
+	left: 0px;
+	top: 370px;
+	height: 50px;
+	width: 50px;
+	margin: 0;
+	padding: 0;
+	position: fixed;
+	z-index: 9999;
+	display:block;
 }
 
 ul {
@@ -54,8 +60,8 @@ li {
 
 li a {
     display: block;
-    width: 200px;
-    height: 50px;
+    width: 285px;
+    height: 30px;
     font-weight: bold;
     color: #FFFFFF;
     background-color: #98bf21;

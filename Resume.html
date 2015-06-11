@@ -8,19 +8,19 @@
       switch (name) {
         case '1':
           MainTitle.innerHTML = "About Me";
-          MainText.innerHTML = "<p>I have lived in many different parts of the world as I grew up, most notably traveling to Shanghai after 6th grade. Studying in Shanghai allowed me to compare the differences in culture between North America and Asia, and has helped honed my mathematical and logical skills. Constantly moving has also helped me learn to adapt to new environments quickly. I still retained a strong motivation to explore my own interests, and graduating from an international school has helped me learn how to maintain connections with friends and classmates, who went to universities all over the world to achieve a higher education.</p><p>Having played games since I was a child, I have been highly interested in understanding the underlying infrastructure of games throughout my entire life. Enrolling in the University of British Columbia's Computer Engineering program gave me the opportunity I needed to delve deeper into my interests, allowing me to learn languages such as C/C++ and Java and other coding practices such as code testing and agile programming. As a computer engineer, I have been trained to solve challenging problems, and extensive experience working in teams has honed my communication and collaboration skills. I look forward to learning even more skills that can help me be a better engineer, and possibly allow me to help work on bringing enjoyable, high quality games to gamers like me in the future.<p/><p>Games I currently enjoy include League of Legends, CS:GO, World of Warcraft and Hearthstone. Games I previously played and completed include Borderlands 2, Diablo 3, Starcraft 2 and Dark Souls, as well as numerous others. Other interests of mine include sports such as basketball and badminton, as well as creative writing. I am also an avid mobile gamer, enjoying mobile games such as Puzzles and Dragons as well as tower defense games such as Kingdom Rush.</p>";
+          MainText.innerHTML = "<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbspI have lived in many different parts of the world as I grew up, most notably traveling to Shanghai after 6th grade. Studying in Shanghai allowed me to compare the differences in culture between North America and Asia, and has helped honed my mathematical and logical skills. Constantly moving has also helped me learn to adapt to new environments quickly. I still retained a strong motivation to explore my own interests, and graduating from an international school has helped me learn how to maintain connections with friends and classmates, who went to universities all over the world to achieve a higher education.</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbspHaving played games since I was a child, I have been highly interested in understanding the underlying infrastructure of games throughout my entire life. Enrolling in the University of British Columbia's Computer Engineering program gave me the opportunity I needed to delve deeper into my interests, allowing me to learn languages such as C/C++ and Java and other coding practices such as code testing and agile programming. As a computer engineer, I have been trained to solve challenging problems, and extensive experience working in teams has honed my communication and collaboration skills. I look forward to learning even more skills that can help me be a better engineer, and possibly allow me to help work on bringing enjoyable, high quality games to gamers like me in the future.<p/><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbspGames I currently enjoy include League of Legends, CS:GO, World of Warcraft and Hearthstone. Games I previously played and completed include Borderlands 2, Diablo 3, Starcraft 2 and Dark Souls, as well as numerous others. Other interests of mine include sports such as basketball and badminton, as well as creative writing. I am also an avid mobile gamer, enjoying mobile games such as Puzzles and Dragons as well as tower defense games such as Kingdom Rush.</p>";
           break;
         case '2':
           MainTitle.innerHTML = "Academic Accomplishments";
-          MainText.innerHTML = "Stuff about school here";
+          MainText.innerHTML = "<p><b>Unix Shell Imitation</b></p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbspCommunicated with three other group members in an organized fashion to implement a fully functional Unix shell imitation. Fully implemented the change directory function, demonstrating strong analytical skills through string manipulation. Wrote a full length technical report detailing the implementation, resulting in full marks and an 82 percent on the overall project.</p><p><b>JPacman Undo Extension</b></p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbspExtended the original JPacman game to support undo functions through use of double-ended queues. Demonstrated knowledge on data structures through proper usage of deques, “saving” a game state that can be popped from the deque. Wrote system and user tests to ensure functionality with 90 percent test coverage using Eclemma.</p><p><b>Arcade Style Ping Pong Game</b></p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbspImplemented an arcade style ping pong game using VHDL, Quartus II and Altera DE2. Applied knowledge on system clocks to create a separate, slower clock. Combined state machine and datapath concepts taught in class and obtained full marks, demonstrating ability to apply knowledge learned in lectures to practical applications.</p><p><b>Reflow Oven Controller</b></p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbspWrote software in assembly on the 8051 microcontroller to control and monitor oven temperatures. Researched interrupt service routines outside of lab and lecture hours from datasheets and applied them to project. Modeled a finite state machine to cover all cases possible, ensuring a working product with built-in safety mechanisms.</p>";
           break;
         case '3':
-          MainTitle.innerHTML = "Extracurricular Accomplishments";
-          MainText.innerHTML = "Stuff about other stuff here";
+          MainTitle.innerHTML = "Extracurricular";
+          MainText.innerHTML = "<p><b>Host of Basketball Tournament</b></p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbspOrganized and lead large scale tournament encompassing 2 academic generations. Tournament was widely popular and well-received, accumulating a total of 22 teams that enrolled. Coordinated with instructors and gym managers to book ball courts for daily games. Extremely successful, demonstrated strong leadership skills and self-motivation to accomplish goals.</p>";
           break;
         case '4':
           MainTitle.innerHTML = "Contact Me";
-          MainText.innerHTML = "<p><img src=\"Phone.jpg\" alt=\"Phone\" style=\"float:left;width:42px;height:42px;\">+1 (778)999-9177</p><p><img src=\"Facebook.jpg\" alt=\"Facebook\" style=\"float:left;width:42px;height:42px;\">Link to my Facebook</p>";
+          MainText.innerHTML = "<p><img src=\"Phone.jpg\" alt=\"Phone\" style=\"float:left;width:42px;height:42px;\">+1 (778)999-9177</p><br><p><img src=\"Email.jpg\" alt=\"Email\" style=\"float:left;width:42px;height:42px;\">krizloo@gmail.com</p>";
           break;
       }
     }
@@ -40,15 +40,21 @@
   </head>
 
   <body>
-    <div id="side-tabs">
+    <div id="side-tab-fb">
       <a class="support" href="https://www.facebook.com/callmenazar">
         <img src="Facebook.jpg">
       </a>
     </div>
 
-    <div id="side-tabz">
+    <div id="side-tab-git">
       <a class="support" href="https://github.com/chrislu1207">
         <img src="Github.jpg">
+      </a>
+    </div>
+
+    <div id="side-tab-email">
+      <a class="support" href="mailto:krizloo@gmail.com">
+        <img src="Email.jpg">
       </a>
     </div>
 
@@ -64,13 +70,13 @@
       <ul id="menu">
         <li id="1"><a>About Me</a></li>
         <li id="2"><a>Academic Accomplishments</a></li>
-        <li id="3"><a>Extracurricular Accomplishments</a></li>
+        <li id="3"><a>Extracurricular</a></li>
         <li id="4"><a>Contact Me</a></li>
       </ul>
 
     <div id="Main">
       <h3 id="MainTitle"></h3>
-      <p id="MainText"></p>
+      <p id="MainText">Click on any of the above tabs to learn more about me!</p>
   </div>
 
   </div>
